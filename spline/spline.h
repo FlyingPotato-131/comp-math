@@ -14,8 +14,9 @@ class cspline{
 	std::vector<y_t> p_y; //y of given points
 
 	const size_t pos(const x_t x, const size_t i, const size_t prev) const{
-		// std::cout << prev << " " << i << "\n";
-		return (x >= p_x[i] && x <= p_x[i + 1]) ? i : (x < p_x[i] ? pos(x, (i + prev) / 2, prev) : pos(x, (3 * i - prev) / 2, i));
+		// std::cout << x << "; " << prev << " " << i << "\n";
+		// std::cout << x << " " << i << "\n";
+		return (x >= p_x[i] && x <= p_x[i + 1]) ? i : (x < p_x[i] ? pos(x, (i + prev) / 2 == i ? i - 1 : (i + prev) / 2, prev) : pos(x, (3 * i - prev) / 2 == i ? i + 1 : (3 * i - prev) / 2, i));
 	}
 
 public:
