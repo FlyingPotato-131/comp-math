@@ -5,6 +5,7 @@
 
 int main(){
 	//natural spline
+	std::cout << "natural,\n";
 	for(size_t N = 5; N < 161; N *= 2){
 		std::vector<float> args(N);
 		std::vector<float> vals(N);
@@ -21,11 +22,12 @@ int main(){
 			if(abs(sp.interp(i / 100.f) - exp(i / 100.f)) > err)
 				err = abs(sp.interp(i / 100.f) - exp(i / 100.f));
 		}
-		std::cout << N << " " << err << "\n";
+		std::cout << N << "," << err << "\n";
 	}
 	std::cout << "\n\n";
 
 	//unnatural spline
+	std::cout << "unnatural,\n";
 	for(size_t N = 5; N < 161; N *= 2){
 		std::vector<float> args(N);
 		std::vector<float> vals(N);
@@ -42,6 +44,6 @@ int main(){
 			if(abs(sp.interp(i / 100.f) - exp(i / 100.f)) > err)
 				err = abs(sp.interp(i / 100.f) - exp(i / 100.f));
 		}
-		std::cout << N << " " << err << "\n";
+		std::cout << N << "," << err << "\n";
 	}
 }

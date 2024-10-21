@@ -5,6 +5,7 @@
 
 int main(){
 	//eq3
+	std::cout << "ne,3\n";
 	std::array<float, 3> args3;
 	std::array<float, 3> val3;
 	for(int pw = 1; pw > -5; pw--){
@@ -25,11 +26,12 @@ int main(){
 			if(abs(in3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(in3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//cheb3
+	std::cout << "nc,3\n";
 	std::array<float, 3> cheb3;
 	for(int pw = 1; pw > -5; pw--){
 		for(size_t i = 0; i < 3; i++){
@@ -50,11 +52,12 @@ int main(){
 			if(abs(ch3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ch3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//eq4
+	std::cout << "ne,4\n";
 	std::array<float, 4> args4;
 	std::array<float, 4> val4;
 	for(int pw = 1; pw > -5; pw--){
@@ -72,11 +75,12 @@ int main(){
 			if(abs(in4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(in4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//cheb4
+	std::cout << "nc,4\n";
 	std::array<float, 4> cheb4;
 	for(int pw = 1; pw > -5; pw--){
 		for(size_t i = 0; i < 4; i++){
@@ -93,11 +97,12 @@ int main(){
 			if(abs(ch4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ch4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//eq5
+	std::cout << "ne,5\n";
 	std::array<float, 5> args5;
 	std::array<float, 5> val5;
 	for(int pw = 1; pw > -5; pw--){
@@ -115,11 +120,12 @@ int main(){
 			if(abs(in5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(in5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//cheb5
+	std::cout << "nc,5\n";
 	std::array<float, 5> cheb5;
 	for(int pw = 1; pw > -5; pw--){
 		for(size_t i = 0; i < 5; i++){
@@ -136,12 +142,13 @@ int main(){
 			if(abs(ch5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ch5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//ermit
 	//eq3
+	std::cout << "ee,3\n";
 	for(int pw = 1; pw > -5; pw--){
 		for(int i = 0; i < 3; i++){
 			args3[i] = i / (2.f);
@@ -157,11 +164,12 @@ int main(){
 			if(abs(ein3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ein3.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//eq4
+	std::cout << "ee,4\n";
 	for(int pw = 1; pw > -5; pw--){
 		for(int i = 0; i < 4; i++){
 			args4[i] = i / (3.f);
@@ -177,11 +185,12 @@ int main(){
 			if(abs(ein4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ein4.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 
 	//eq5
+	std::cout << "ee,5\n";
 	for(int pw = 1; pw > -5; pw--){
 		for(int i = 0; i < 5; i++){
 			args5[i] = i / (4.f);
@@ -197,7 +206,7 @@ int main(){
 			if(abs(ein5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw))) > err)
 				err = abs(ein5.interp(i / 1000.f * pow(2, pw)) - exp(i / 1000.f * pow(2, pw)));
 		}	
-		std::cout << pow(2, pw) << " " << err << "\n";
+		std::cout << pow(2, pw) << "," << err << "\n";
 	}
 	std::cout << "\n";
 }
