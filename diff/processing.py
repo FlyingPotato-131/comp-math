@@ -16,8 +16,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[2:, 0]), np.log(data[2:, 1]))
-ax.plot([np.log(data[2, 0]), np.log(data[-1, 0])], [k * np.log(data[2, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:4, 0]), np.log(data[1:4, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[3, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[3, 0]) + b])
 
 print(f"k = {k:.2f}")
 
@@ -33,8 +33,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[1:, 0]), np.log(data[1:, 1]))
-ax.plot([np.log(data[1, 0]), np.log(data[-1, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:3, 0]), np.log(data[1:3, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[2, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[2, 0]) + b])
 
 print(f"k = {k:.2f}")
 
@@ -50,8 +50,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[1:, 0]), np.log(data[1:, 1]))
-ax.plot([np.log(data[1, 0]), np.log(data[-1, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:3, 0]), np.log(data[1:3, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[2, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[2, 0]) + b])
 
 print(f"k = {k:.2f}")
 
@@ -67,8 +67,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[2:, 0]), np.log(data[2:, 1]))
-ax.plot([np.log(data[2, 0]), np.log(data[-1, 0])], [k * np.log(data[2, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:4, 0]), np.log(data[1:4, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[3, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[3, 0]) + b])
 
 print(f"k = {k:.2f}")
 
@@ -84,8 +84,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[1:, 0]), np.log(data[1:, 1]))
-ax.plot([np.log(data[1, 0]), np.log(data[-1, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:3, 0]), np.log(data[1:3, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[2, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[2, 0]) + b])
 
 print(f"k = {k:.2f}")
 
@@ -101,8 +101,8 @@ plt.xlabel("ln(h)")
 plt.ylabel("ln(err)")
 
 ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
-k, b, dk, db = graphs.lsqm(np.log(data[1:, 0]), np.log(data[1:, 1]))
-ax.plot([np.log(data[1, 0]), np.log(data[-1, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[-1, 0]) + b])
+k, b, dk, db = graphs.lsqm(np.log(data[1:3, 0]), np.log(data[1:3, 1]))
+ax.plot([np.log(data[1, 0]), np.log(data[2, 0])], [k * np.log(data[1, 0]) + b, k * np.log(data[2, 0]) + b])
 
 print(f"k = {k:.2f}")
 

@@ -12,10 +12,22 @@ struct argGetter<R(arg_t)>{
 template<typename T>
 using diff_t = decltype(std::declval<T>() - std::declval<T>());
 
+
+template<std::size_t N>
+constexpr std::array<double, N> points();
+
+template<std::size_t N>
+constexpr std::array<double, N> weight();
+
+
+
 template<typename func_t, size_t N>
 decltype(auto) integrate(const func_t &func, const typename argGetter<func_t>::arg &start, const typename argGetter<func_t>::arg &end){
 	std::array<typename argGetter<func_t>::arg, 4> args;
 	std::array<typename argGetter<func_t>::arg, 4> weights;
+
+	constexpr auto p = points<N>();
+	constexpr auto w = weight<N>();
 	
 	switch(N){
 	case 1:
