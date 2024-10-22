@@ -15,7 +15,7 @@ plt.title("Newton, equidistant knots, N = 3")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -28,7 +28,7 @@ plt.title("Newton, equidistant knots, N = 4")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -41,7 +41,7 @@ plt.title("Newton, equidistant knots, N = 5")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -54,7 +54,7 @@ plt.title("Newton, Chebyshev knots, N = 3")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -67,7 +67,7 @@ plt.title("Newton, Chebyshev knots, N = 4")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -80,7 +80,7 @@ plt.title("Newton, Chebyshev knots, N = 5")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -93,7 +93,7 @@ plt.title("Hermite, equidistant knots, N = 3")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -106,7 +106,7 @@ plt.title("Hermite, equidistant knots, N = 4")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
 
@@ -119,6 +119,6 @@ plt.title("Hermite, equidistant knots, N = 5")
 plt.xlabel("l")
 plt.ylabel("err")
 
-ax.plot(data[:, 0], data[:, 1], '.')
+ax.plot(np.log(data[:, 0]), np.log(data[:, 1]), '.')
 
 plt.show()
