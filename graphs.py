@@ -52,7 +52,7 @@ def lsqm(x, y, dx = np.empty(0), dy = np.empty(0), bflag = True):
 # 		plt.savefig(filename)
 # 	plt.show()
 
-# def plotLsqm(x, y, dx = np.empty(0), dy = np.empty(0), filename = None, plotFmt = '.', lsqmFmt = 'r', title = None, xlabel = None, ylabel = None, stretch = 0.1, bflag = True):
+# def plotlsqm(x, y, dx = np.empty(0), dy = np.empty(0), filename = none, plotfmt = '.', lsqmfmt = 'r', title = none, xlabel = none, ylabel = none, stretch = 0.1, bflag = true):
 # 	if(dx.size == 0):
 # 		dx = np.zeros(np.size(x))
 # 	if(dy.size == 0):
@@ -60,20 +60,20 @@ def lsqm(x, y, dx = np.empty(0), dy = np.empty(0), bflag = True):
 # 	k, b, dk, db = lsqm(x, y, dx, dy, bflag)
 # 	fig, ax = plt.subplots()
 # 	plt.minorticks_on()
-# 	plt.grid(True, "major", "both", color = "#888888")
-# 	plt.grid(True, "minor", "both", linestyle = '--')
+# 	plt.grid(true, "major", "both", color = "#888888")
+# 	plt.grid(true, "minor", "both", linestyle = '--')
 # 	plt.title(title)
 # 	plt.xlabel(xlabel)
 # 	plt.ylabel(ylabel)
 # 	xdist = np.max(x) - np.min(x)
-# 	ax.plot([np.min(x) - stretch * xdist, np.max(x) + stretch * xdist], [k * (np.min(x) - stretch * xdist) + b, k * (np.max(x) + stretch * xdist) + b], lsqmFmt)
-# 	ax.errorbar(x, y, dy, dx, fmt = plotFmt)	
-# 	if(filename != None):
+# 	ax.plot([np.min(x) - stretch * xdist, np.max(x) + stretch * xdist], [k * (np.min(x) - stretch * xdist) + b, k * (np.max(x) + stretch * xdist) + b], lsqmfmt)
+# 	ax.errorbar(x, y, dy, dx, fmt = plotfmt)	
+# 	if(filename != none):
 # 		plt.savefig(filename)
 # 	plt.show()
 # 	return [k, b, dk, db]
 
-# def plotlsqm(x, y, dx = np.empty(0), dy = np.empty(0), filename = None, plotFmt = '.', lsqmFmt = 'r', title = None, xlabel = None, ylabel = None, stretch = 0.1, bflag = True):
+# def plotlsqm(x, y, dx = np.empty(0), dy = np.empty(0), filename = none, plotfmt = '.', lsqmfmt = 'r', title = none, xlabel = none, ylabel = none, stretch = 0.1, bflag = true):
 # 	return plotLsqm(x, y, dx, dy, filename, plotFmt, lsqmFmt, title, xlabel, ylabel, stretch, bflag)
 
 # def plotPoly(n, x, y, dx = None, dy = None, filename = None, plotFmt = '.', polyFmt = 'r', title = None, xlabel = None, ylabel = None):
